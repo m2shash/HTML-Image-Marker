@@ -1,0 +1,37 @@
+
+/* 
+    Document   : style
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+h1 { margin-top:150px; margin-left:100px;}
+.mainContainer {
+  width : 600px;
+  height: 550px;
+  border: 1px royalblue;
+  background-image: url("../images/map.png");
+  margin: 100px;
+}
+
+.pointerElm {
+  position: absolute;
+  z-index: 100;
+  width : 30px;
+  height: 44px;
+}
+
+.CCImgPointer { color : black; }
+
+.CCDragElement {
+  background-color: #ccc;
+  border: 1px solid royalblue;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 99;
+}

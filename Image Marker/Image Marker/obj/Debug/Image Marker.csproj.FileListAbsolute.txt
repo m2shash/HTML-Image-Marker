@@ -1,0 +1,33 @@
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\ApplicationInsights.config
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\csc.exe
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\System.Collections.Immutable.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\vbc.exe
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\VBCSCompiler.exe
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\roslyn\VBCSCompiler.exe.config
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Image Marker.dll.config
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Image Marker.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Image Marker.pdb
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.Web.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.WindowsServer.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.ApplicationInsights.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.Web.xml
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.AI.WindowsServer.xml
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.ApplicationInsights.xml
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\obj\Debug\Image Marker.dll
+c:\users\skumar\documents\visual studio 2015\Projects\Image Marker\Image Marker\obj\Debug\Image Marker.pdb
+C:\Users\skumar\Documents\Visual Studio 2015\Projects\Image Marker\Image Marker\obj\Debug\Image Marker.csprojResolveAssemblyReference.cache

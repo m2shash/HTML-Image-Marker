@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>jQuery imagePointer.js Demo</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="jquery-script-menu">
+        <div class="jquery-script-center">
+            <ul>
+                <li><a href="http://www.jqueryscript.net/other/Custom-Image-Marker-Plugin-For-jQuery-imagePointer-js.html">Download This Plugin</a></li>
+                <li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+            </ul>
+            <!--<div class="jquery-script-ads">
+                <script type="text/javascript">
+//google_ad_client = "ca-pub-2783044520727903";/* jQuery_demo */google_ad_slot = "2780937993";google_ad_width = 728;google_ad_height = 90;
+                </script>
+                <script type="text/javascript"
+                        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
+            </div>-->
+            <div class="jquery-script-clear"></div>
+        </div>
+    </div>
+<h1>jQuery imagePointer.js Demo</h1>
+
+  
+
+    <input id="btn-Preview-Image" type="button" value="Preview" />
+    <a id="btn-Convert-Html2Image" href="#">Download</a>
+    <br />
+
+<div class="mainContainer" id="html-content-holder"></div>
+    <!--.mainContainer{
+            background-image: url("images/map.PNG");
+}
+
+    $(".mainContainer").imagePointer();-->
+
+    <h3>Preview :</h3>
+    <div id="previewImage"> </div>
+
+<div id="outputElm"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/Save.js"></script>
+<script type="text/javascript" src="js/html2canvas.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.imagePointer.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var currCord = getCoord();
+        $(".mainContainer").imagePointer({
+            pointerArray    : currCord,
+            pointerCallBack : function(pointerInfo){
+                $('#outputElm').html(JSON.stringify(pointerInfo));
+                currCord = getCoord();
+                currCord.push(pointerInfo);
+                document.cookie="coord=" + JSON.stringify(currCord);
+            }
+        });
+    });
+    function getCoord(){
+        var currCord = getCookie("coord");
+        if(currCord === ""){
+            currCord = [];
+        }else{
+            currCord = JSON.parse(currCord);
+        }
+        return currCord;
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    var element = $("#html-content-holder"); // global variable
+        var getCanvas; // global variable
+
+        $("#btn-Preview-Image").on('click', function () {
+            html2canvas(element, {
+                onrendered: function (canvas) {
+                    $("#previewImage").append(canvas);
+                    getCanvas = canvas;
+                }
+            });
+        });
+
+        $("#btn-Convert-Html2Image").on('click', function () {
+            var imgageData = getCanvas.toDataURL("image/png");
+            // Now browser starts downloading it instead of just showing it
+            var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+            $("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
+        });
+
+    });
+
+</script>
